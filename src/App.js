@@ -9,6 +9,8 @@ function App() {
   const [currentWeather, setCurrentWeather] = useState(null)
   const [forecast, setForecast] = useState(null)
 
+  console.log('HELLO', WEATHER_API_KEY)
+
   const handleOnSearchChange = (searchData) => {
     const [lat, lon] = searchData.value.split(" ");
 
